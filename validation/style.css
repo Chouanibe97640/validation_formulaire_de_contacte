@@ -1,0 +1,127 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+      height:100vh;
+      font-family: sans-serif;
+  
+  }
+  
+  .container{
+      width:600px;
+      margin: 50px auto;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius:5px;
+      padding:30px;
+  }
+  
+  h2{
+      font-size:30px;
+      text-align:center;
+  }
+  
+  .input-group{
+      margin-top:40px;
+  }
+  
+  label{
+      margin-bottom:20px;
+  }
+  
+  input{
+      width:100%;
+      background: transparent;
+      color:#f1f1f1;
+      padding:10px 0;
+      font-size:20px;
+      border:none;
+      border-bottom: 1px solid #f1f1f1
+  }
+  
+  .icon-input-container{
+      position: relative;
+  }
+  
+  .icone-verif{
+      width:30px;
+      position: absolute;
+      top:50%;
+      right:0;
+      transform: translateY(-50%);
+      display:none;
+  }
+  
+  .error-msg{
+      color: red;
+      margin-top: 10px;
+      display:none;
+  }
+  
+  .psw-info{
+   color:#817e7e
+  }
+  .lines{
+      width:80%;
+      display:flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0 auto;
+  
+  
+  }
+  .l{
+      height:5px;
+      width:30%;
+      margin:15px 5px;
+      display:none;
+      position: relative;
+  }
+  .l1{
+      background-color: orangered;
+  }
+  .l2{
+      background-color: yellow;
+      
+  }
+  .l3{
+      background-color: green;
+      
+  }
+  .lines span {
+      position: absolute;
+      left:50%;
+      top:10px;
+      transform: translateX(-50%);
+  
+  }
+  
+  form button {
+      min-width:150px;
+      padding:15px 25px;
+      display: block;
+      margin: 30px auto;
+      color:#000;
+      font-weight:600;
+      cursor: pointer;
+      font-size:18px;
+      border-radius:5px;
+  }
+  
+  
+  /* Animation injectée par le js  */
+  .shake{
+      animation: shake 0.3s linear;
+  }
+  
+  @keyframes shake {
+      25%{
+          transform: translateX(-5px);
+      }
+      50%{
+          transform: translateX(5px);
+      }
+  }
